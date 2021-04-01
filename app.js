@@ -82,7 +82,6 @@ function sumArray(sumArr) {
   let a= sumArr[0];
   let b= sumArr[1];
   let c= sumArr[2];
-  console.log(a,b,c);
   let summation=sum(a,b)[0];
   summation=sum(summation,c)[0];
   return[summation,`${a},${b},${c} was passed in as an array of numbers, and ${summation} is their sum.`];
@@ -106,11 +105,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) {
+  let a=multArr[0];
+  let b=multArr[1];
+  let c=multArr[2];
+  let multiplication= multiply(a,b)[0];
+  multiplication=multiply(multiplication,c)[0];
+  return[multiplication,`The numbers ${a},${b},${c} have a product of ${multiplication}.`];
   //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
