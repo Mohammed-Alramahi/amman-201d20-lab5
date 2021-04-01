@@ -57,7 +57,6 @@ function sumAndMultiply(a, b, c) {
   let m=multiply(a,b)[0];
     m=multiply(m,c)[0];
   return[s,m,`${a} and ${b} and ${c} sum to ${s}.`,`The product of ${a} and ${b} and ${c} is ${m}.`];
-
 }
 //sumAndMultiply(4,5,7);
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -86,7 +85,7 @@ function sumArray(sumArr) {
   console.log(a,b,c);
   let summation=sum(a,b)[0];
   summation=sum(summation,c)[0];
-  return[summation,`${a},${b},${c} was passed in as an array of numbers, and ${summation} is their sum.`]
+  return[summation,`${a},${b},${c} was passed in as an array of numbers, and ${summation} is their sum.`];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
